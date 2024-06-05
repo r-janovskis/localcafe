@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./styles/styles.css" />
+
     <!-- Importing google fonts 'Seymour One' and 'Work Sans'-->
     <link
       href="https://fonts.googleapis.com/css2?family=Seymour+One&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap"
@@ -16,6 +16,7 @@
       integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
       crossorigin="anonymous"
     />
+    <link rel="stylesheet" href="./styles/styles.css" />
     <!-- Imprt bootstrap javascript -->
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
@@ -27,14 +28,28 @@
   </head>
   <body>
     <header>
-      <p class="header_title">Pythagorean Cafe</p>
+      <div class="caffee-header">
+        <img
+          src="./images/logo.png"
+          alt="Logo of the caffee - Pythagorean Theorem"
+        />
+        <p class="header_title">Pythagorean Cafe</p>
+      </div>
+      <ul>
+        <li><a href="./index.html">Home</a></li>
+        <li><a href="./about.html">About Us</a></li>
+        <li><a href="./menu.html">Menu</a></li>
+        <li><a href="./products.html">Products</a></li>
+        <li><a href="./contact.html">Contact</a></li>
+      </ul>
     </header>
     <main>
       <h1>Welcome to Pythagorean Cafe!</h1>
       <p>
-        A place where drinks and pastries are made using ancient principles to
+        A place where drinks and foods are made using ancient principles to
         satisfy taste of the modern life!
       </p>
+      <p></p>
       <!-- Adding bootstrap carousel-->
       <div
         id="carouselExampleAutoplaying"
@@ -91,5 +106,8 @@
         </button>
       </div>
     </main>
+    <footer>
+      <p>Pythagorean Caffee @ 2024</p>
+    </footer>
   </body>
 </html>
