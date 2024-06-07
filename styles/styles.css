@@ -1,14 +1,31 @@
+/* 
+  -------------------------------------------------------------------------------------------------------------------------------
+  Basic formatting - removing initial paddings/margines and setting fonts we want to use
+  --------------------------------------------------------------------------------------------------------------------------------
+*/
+
 html {
   font-family: "Work Sans", sans-serif;
   font-size: 16px;
 }
 
-h1 {
+h1,
+.caffee-header p {
   font-family: "Seymour One", sans-serif;
 }
 
+p {
+  margin: 0;
+}
+
+/* 
+  -------------------------------------------------------------------------------------------------------------------------------
+  Page lever formatting - position of header, main and footer placed in web page
+  --------------------------------------------------------------------------------------------------------------------------------
+*/
+
 body {
-  height: 100vh;
+  min-height: 100vh;
   width: 1200px;
   margin: 0 auto;
   grid-template-areas:
@@ -24,30 +41,68 @@ header {
   overflow: hidden;
   display: flex;
   justify-content: space-between;
-  padding: 0.5rem 1rem;
+  align-items: end;
+  height: 3rem;
 }
 
 main {
   grid-area: main;
+  background-color: yellow;
 }
 
 footer {
   grid-area: foot;
+  background-color: silver;
 }
 
-#caffee-heared {
-  height: 100%;
-  width: 50%;
+/* 
+  -------------------------------------------------------------------------------------------------------------------------------
+  Header formatting - styling elements in header part of the page
+  --------------------------------------------------------------------------------------------------------------------------------
+*/
+
+.header_logo {
+  height: inherit;
   display: flex;
-  flex-direction: row;
+  margin-left: 1rem;
 }
 
-#caffee-header img {
+.header_logo img {
   display: inline;
-  height: 3rem;
   object-fit: cover;
 }
 
-#caffee-header p {
+.header_logo p {
   display: inline;
+  font-size: 2rem;
+  font-weight: 700;
+  margin-left: 0.5rem;
+}
+
+header ul {
+  list-style-type: none;
+  overflow: hidden;
+  margin: 0;
+
+  margin-right: 1rem;
+}
+
+header ul li {
+  display: inline-block;
+}
+
+header ul > li + li {
+  border-left: 1px solid gray;
+}
+
+header a {
+  margin: 0 1rem;
+  font-size: 1.3rem;
+  font-weight: 700;
+  text-decoration: none;
+  color: navy;
+}
+
+header a:hover {
+  color: blue;
 }
