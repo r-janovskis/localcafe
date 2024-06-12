@@ -98,11 +98,21 @@ header ul > li + li {
 header a {
   margin: 0 1rem;
   font-size: 1.3rem;
-  font-weight: 700;
+  font-weight: 600;
   text-decoration: none;
   color: navy;
 }
 
 header a:hover {
   color: blue;
+}
+
+.current {
+  color: navy;
+  font-weight: 700;
+  text-decoration: underline;
+}
+
+.current:hover {
+  color: navy;
 }
