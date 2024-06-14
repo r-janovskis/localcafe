@@ -28,31 +28,30 @@ body {
   min-height: 100vh;
   width: 1200px;
   margin: 0 auto;
+  display: grid;
   grid-template-areas:
     "head"
     "main"
     "foot";
 
-  grid-template-rows: 3rem 1fr 2rem;
+  grid-template-rows: auto 1fr auto;
 }
 
 header {
   grid-area: head;
-  overflow: hidden;
   display: flex;
   justify-content: space-between;
   align-items: end;
-  height: 3rem;
+
+  border-bottom: 2px solid gray;
 }
 
 main {
   grid-area: main;
-  background-color: yellow;
 }
 
 footer {
   grid-area: foot;
-  background-color: silver;
 }
 
 /* 
@@ -62,14 +61,15 @@ footer {
 */
 
 .header_logo {
-  height: inherit;
   display: flex;
   margin-left: 1rem;
+  align-items: center;
 }
 
 .header_logo img {
   display: inline;
   object-fit: cover;
+  height: 2rem;
 }
 
 .header_logo p {
@@ -92,7 +92,7 @@ header ul li {
 }
 
 header ul > li + li {
-  border-left: 1px solid gray;
+  border-left: 2px solid gray;
 }
 
 header a {
@@ -115,4 +115,51 @@ header a:hover {
 
 .current:hover {
   color: navy;
+}
+
+/* 
+  -------------------------------------------------------------------------------------------------------------------------------
+  Formatting of main header and text that is on all pages (class -> intro)
+  --------------------------------------------------------------------------------------------------------------------------------
+*/
+
+.intro,
+h1 {
+  margin: 2rem auto;
+  text-align: center;
+}
+
+.intro {
+  font-size: 1.2rem;
+}
+
+/* 
+  -------------------------------------------------------------------------------------------------------------------------------
+  Footer formatting - styling elements in footer part of the page
+  --------------------------------------------------------------------------------------------------------------------------------
+*/
+
+footer {
+  padding: 0.5rem 0;
+}
+
+p {
+  text-align: center;
+}
+
+/* 
+  -------------------------------------------------------------------------------------------------------------------------------
+  index.html formatting
+  --------------------------------------------------------------------------------------------------------------------------------
+*/
+
+main {
+  overflow: auto;
+}
+
+.carousel {
+  width: 1000px;
+  margin: 2rem auto;
+  border-radius: 2rem;
+  overflow: hidden;
 }
