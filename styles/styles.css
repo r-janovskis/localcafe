@@ -143,7 +143,7 @@ footer {
   padding: 0.5rem 0;
 }
 
-p {
+footer p {
   margin-left: 1rem;
 }
 
@@ -162,4 +162,20 @@ main {
   margin: 2rem auto;
   border-radius: 2rem;
   overflow: hidden;
+}
+
+/* 
+  -------------------------------------------------------------------------------------------------------------------------------
+  about.html formatting
+  --------------------------------------------------------------------------------------------------------------------------------
+*/
+
+h2 {
+  font-weight: 700;
+  margin-top: 2rem;
+}
+
+.events ul {
+  list-style: none;
+  margin-top: 0.5rem;
 }
