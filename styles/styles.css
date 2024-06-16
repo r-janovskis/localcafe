@@ -16,6 +16,7 @@ h1,
 
 p {
   margin: 0;
+  line-height: 1.8;
 }
 
 /* 
@@ -26,7 +27,7 @@ p {
 
 body {
   min-height: 100vh;
-  width: 1200px;
+  max-width: 1200px;
   margin: 0 auto;
   display: grid;
   grid-template-areas:
@@ -52,6 +53,9 @@ main {
 
 footer {
   grid-area: foot;
+  background-color: navy;
+  color: white;
+  margin-top: 2rem;
 }
 
 /* 
@@ -180,6 +184,20 @@ h2 {
   margin-top: 0.5rem;
 }
 
+.about-content {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 1rem;
+}
+
+.about-content img {
+  max-width: 15%;
+}
+
+.about-content .description {
+  max-width: 75%;
+}
+
 /* 
   -------------------------------------------------------------------------------------------------------------------------------
   menu.html formatting
@@ -188,4 +206,9 @@ h2 {
 
 .price {
   text-align: right;
+}
+
+.tab-pane {
+  max-width: 1000px;
+  margin: auto;
 }
