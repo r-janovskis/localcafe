@@ -25,7 +25,7 @@ p {
   --------------------------------------------------------------------------------------------------------------------------------
 */
 
-body {
+.body-container {
   min-height: 100vh;
   max-width: 1200px;
   margin: 0 auto;
@@ -56,6 +56,10 @@ footer {
   background-color: navy;
   color: white;
   margin-top: 2rem;
+}
+
+.shade {
+  background-color: rgba(94, 80, 80, 0.438);
 }
 
 /* 
@@ -246,35 +250,66 @@ iframe {
 form {
   width: 90%;
   margin: 1rem auto;
+  overflow: auto;
 }
 
 label {
   font-weight: 700;
   margin-top: 1rem;
+  display: inline-block;
 }
 
-.get-email label {
+.get-info label {
   width: 10%;
 }
-.get-email input {
-  width: 88%;
+.get-info input {
+  width: 85%;
+  height: 1.3rem;
+  border-radius: 0.5rem;
 }
 
 textarea {
-  width: 100%;
+  width: 95%;
   height: 300px;
+  border-radius: 0.5rem;
+  margin: auto;
 }
 
-input[type="submit"] {
-  margin-top: 1rem;
+.click-button {
+  display: block;
+  margin: 1rem auto;
   padding: 0.5rem;
-  width: 100%;
+  width: 80%;
   font-weight: 700;
   font-size: 1.2rem;
   border-radius: 1rem;
 }
 
-input[type="submit"]:hover {
+.click-button:hover {
   color: white;
   background-color: navy;
+}
+
+/* 
+  -------------------------------------------------------------------------------------------------------------------------------
+  formatting of pop up window
+  --------------------------------------------------------------------------------------------------------------------------------
+*/
+
+.pop-up {
+  display: none;
+  position: fixed;
+  top: 25%;
+  left: 25%;
+  width: 50%;
+  background-color: white;
+  border: solid 3px navy;
+  border-radius: 2rem;
+  z-index: 10;
+  opacity: 2;
+}
+
+.pop-up h2,
+.pop-up p {
+  text-align: center;
 }

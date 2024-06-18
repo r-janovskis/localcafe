@@ -29,153 +29,155 @@
     <title>Pythagorean Cafe - Menu</title>
   </head>
   <body>
-    <header>
-      <div class="header_logo">
-        <img
-          src="./images/logo.png"
-          alt="Logo of the caffee - Pythagorean Theorem"
-        />
-        <p class="header_title">Pythagorean Cafe</p>
-      </div>
-      <ul>
-        <li><a href="./index.html">Home</a></li>
-        <li><a href="./about.html">About Us</a></li>
-        <li><a href="./menu.html" class="current">Menu</a></li>
-        <li><a href="./products.html">Shop</a></li>
-        <li><a href="./contact.html">Contact</a></li>
-      </ul>
-    </header>
-    <main>
-      <h1>Menu</h1>
-      <p class="intro">
-        In our menu you will find classical options as well as some in house
-        specials!
-      </p>
-      <div>
-        <nav>
-          <div class="nav nav-tabs" id="nav-tab" role="tablist">
-            <button
-              class="nav-link active"
-              id="nav-beverages-tab"
-              data-bs-toggle="tab"
-              data-bs-target="#nav-beverages"
-              type="button"
-              role="tab"
-              aria-controls="nav-beverages"
-              aria-selected="true"
+    <div class="body-container">
+      <header>
+        <div class="header_logo">
+          <img
+            src="./images/logo.png"
+            alt="Logo of the caffee - Pythagorean Theorem"
+          />
+          <p class="header_title">Pythagorean Cafe</p>
+        </div>
+        <ul>
+          <li><a href="./index.html">Home</a></li>
+          <li><a href="./about.html">About Us</a></li>
+          <li><a href="./menu.html" class="current">Menu</a></li>
+          <li><a href="./products.html">Shop</a></li>
+          <li><a href="./contact.html">Contact</a></li>
+        </ul>
+      </header>
+      <main>
+        <h1>Menu</h1>
+        <p class="intro">
+          In our menu you will find classical options as well as some in house
+          specials!
+        </p>
+        <div>
+          <nav>
+            <div class="nav nav-tabs" id="nav-tab" role="tablist">
+              <button
+                class="nav-link active"
+                id="nav-beverages-tab"
+                data-bs-toggle="tab"
+                data-bs-target="#nav-beverages"
+                type="button"
+                role="tab"
+                aria-controls="nav-beverages"
+                aria-selected="true"
+              >
+                Beverages
+              </button>
+              <button
+                class="nav-link"
+                id="nav-food-tab"
+                data-bs-toggle="tab"
+                data-bs-target="#nav-food"
+                type="button"
+                role="tab"
+                aria-controls="nav-food"
+                aria-selected="false"
+              >
+                Food
+              </button>
+            </div>
+          </nav>
+          <div class="tab-content" id="nav-tabContent">
+            <div
+              class="tab-pane fade show active"
+              id="nav-beverages"
+              role="tabpanel"
+              aria-labelledby="nav-beverages-tab"
+              tabindex="0"
             >
-              Beverages
-            </button>
-            <button
-              class="nav-link"
-              id="nav-food-tab"
-              data-bs-toggle="tab"
-              data-bs-target="#nav-food"
-              type="button"
-              role="tab"
-              aria-controls="nav-food"
-              aria-selected="false"
+              <h2>Beverages</h2>
+              <table class="table table-hover">
+                <tr>
+                  <td>Americano</td>
+                  <td class="price">4.20 &euro;</td>
+                </tr>
+                <tr>
+                  <td>Flat White</td>
+                  <td class="price">4.75 &euro;</td>
+                </tr>
+                <tr>
+                  <td>Latte</td>
+                  <td class="price">5.30 &euro;</td>
+                </tr>
+                <tr>
+                  <td>Cappuchino</td>
+                  <td class="price">5.40 &euro;</td>
+                </tr>
+                <tr>
+                  <td>Mocca</td>
+                  <td class="price">5.50 &euro;</td>
+                </tr>
+                <tr>
+                  <td>Ice-cream Shake</td>
+                  <td class="price">6.50 &euro;</td>
+                </tr>
+                <tr>
+                  <td>Tea</td>
+                  <td class="price">3.50 &euro;</td>
+                </tr>
+                <tr>
+                  <td>Pythagorean Surprise</td>
+                  <td class="price">7.00 &euro;</td>
+                </tr>
+              </table>
+            </div>
+            <div
+              class="tab-pane fade"
+              id="nav-food"
+              role="tabpanel"
+              aria-labelledby="nav-food-tab"
+              tabindex="0"
             >
-              Food
-            </button>
-          </div>
-        </nav>
-        <div class="tab-content" id="nav-tabContent">
-          <div
-            class="tab-pane fade show active"
-            id="nav-beverages"
-            role="tabpanel"
-            aria-labelledby="nav-beverages-tab"
-            tabindex="0"
-          >
-            <h2>Beverages</h2>
-            <table class="table table-hover">
-              <tr>
-                <td>Americano</td>
-                <td class="price">4.20 &euro;</td>
-              </tr>
-              <tr>
-                <td>Flat White</td>
-                <td class="price">4.75 &euro;</td>
-              </tr>
-              <tr>
-                <td>Latte</td>
-                <td class="price">5.30 &euro;</td>
-              </tr>
-              <tr>
-                <td>Cappuchino</td>
-                <td class="price">5.40 &euro;</td>
-              </tr>
-              <tr>
-                <td>Mocca</td>
-                <td class="price">5.50 &euro;</td>
-              </tr>
-              <tr>
-                <td>Ice-cream Shake</td>
-                <td class="price">6.50 &euro;</td>
-              </tr>
-              <tr>
-                <td>Tea</td>
-                <td class="price">3.50 &euro;</td>
-              </tr>
-              <tr>
-                <td>Pythagorean Surprise</td>
-                <td class="price">7.00 &euro;</td>
-              </tr>
-            </table>
-          </div>
-          <div
-            class="tab-pane fade"
-            id="nav-food"
-            role="tabpanel"
-            aria-labelledby="nav-food-tab"
-            tabindex="0"
-          >
-            <h2>Food</h2>
-            <table class="table table-hover">
-              <tr>
-                <td>Accurate Brownie</td>
-                <td class="price">3.95 &euro;</td>
-              </tr>
-              <tr>
-                <td>Millionare Square</td>
-                <td class="price">3.45 &euro;</td>
-              </tr>
-              <tr>
-                <td>Precise Chocholate Chip Cookie</td>
-                <td class="price">3.95 &euro;</td>
-              </tr>
-              <tr>
-                <td>Cinnamone Swirl</td>
-                <td class="price">3.45 &euro;</td>
-              </tr>
-              <tr>
-                <td>Colourful Ice-cream</td>
-                <td class="price">4.45 &euro;</td>
-              </tr>
-              <tr>
-                <td>Fruit Salad & cream</td>
-                <td class="price">8.45 &euro;</td>
-              </tr>
-              <tr>
-                <td>Puffy Muffin</td>
-                <td class="price">3.95 &euro;</td>
-              </tr>
-              <tr>
-                <td>Buttery Scone</td>
-                <td class="price">3.45 &euro;</td>
-              </tr>
-              <tr>
-                <td>Pythagorean Special Cake</td>
-                <td class="price">4.95 &euro;</td>
-              </tr>
-            </table>
+              <h2>Food</h2>
+              <table class="table table-hover">
+                <tr>
+                  <td>Accurate Brownie</td>
+                  <td class="price">3.95 &euro;</td>
+                </tr>
+                <tr>
+                  <td>Millionare Square</td>
+                  <td class="price">3.45 &euro;</td>
+                </tr>
+                <tr>
+                  <td>Precise Chocholate Chip Cookie</td>
+                  <td class="price">3.95 &euro;</td>
+                </tr>
+                <tr>
+                  <td>Cinnamone Swirl</td>
+                  <td class="price">3.45 &euro;</td>
+                </tr>
+                <tr>
+                  <td>Colourful Ice-cream</td>
+                  <td class="price">4.45 &euro;</td>
+                </tr>
+                <tr>
+                  <td>Fruit Salad & cream</td>
+                  <td class="price">8.45 &euro;</td>
+                </tr>
+                <tr>
+                  <td>Puffy Muffin</td>
+                  <td class="price">3.95 &euro;</td>
+                </tr>
+                <tr>
+                  <td>Buttery Scone</td>
+                  <td class="price">3.45 &euro;</td>
+                </tr>
+                <tr>
+                  <td>Pythagorean Special Cake</td>
+                  <td class="price">4.95 &euro;</td>
+                </tr>
+              </table>
+            </div>
           </div>
         </div>
-      </div>
-    </main>
-    <footer>
-      <p>Pythagorean Caffee @ 2024</p>
-    </footer>
+      </main>
+      <footer>
+        <p>Pythagorean Caffee @ 2024</p>
+      </footer>
+    </div>
   </body>
 </html>

@@ -14,80 +14,98 @@
     <script src="./scripts/contact-script.js" defer></script>
     <title>Pythagorean Cafe - Contact</title>
   </head>
-  <body>
-    <header>
-      <div class="header_logo">
-        <img
-          src="./images/logo.png"
-          alt="Logo of the caffee - Pythagorean Theorem"
-        />
-        <p class="header_title">Pythagorean Cafe</p>
-      </div>
-      <ul>
-        <li><a href="./index.html">Home</a></li>
-        <li><a href="./about.html">About Us</a></li>
-        <li><a href="./menu.html">Menu</a></li>
-        <li><a href="./products.html">Shop</a></li>
-        <li><a href="./contact.html" class="current">Contact</a></li>
-      </ul>
-    </header>
-    <main>
-      <h1>Contact</h1>
-      <p class="intro">
-        Wondering how to find us? Here you will find where we are located and
-        how to get in touch with us.
-      </p>
-      <div class="contact-container">
-        <section class="address">
-          <h2>Address</h2>
-          <p>
-            Blackrock Village Center (2nd floor) <br />
-            Blackrock<br />
-            Co. Dublin
-          </p>
-          <!-- A tip how to embed google maps I got from 
+
+  <body id="body">
+    <div class="body-container">
+      <header>
+        <div class="header_logo">
+          <img
+            src="./images/logo.png"
+            alt="Logo of the caffee - Pythagorean Theorem"
+          />
+          <p class="header_title">Pythagorean Cafe</p>
+        </div>
+        <ul>
+          <li><a href="./index.html">Home</a></li>
+          <li><a href="./about.html">About Us</a></li>
+          <li><a href="./menu.html">Menu</a></li>
+          <li><a href="./products.html">Shop</a></li>
+          <li><a href="./contact.html" class="current">Contact</a></li>
+        </ul>
+      </header>
+      <main>
+        <h1>Contact</h1>
+        <p class="intro">
+          Wondering how to find us? Here you will find where we are located and
+          how to get in touch with us.
+        </p>
+        <div class="contact-container">
+          <section class="address">
+            <h2>Address</h2>
+            <p>
+              Blackrock Village Center (2nd floor) <br />
+              Blackrock<br />
+              Co. Dublin
+            </p>
+            <!-- A tip how to embed google maps I got from 
           https://blog.hubspot.com/website/how-to-embed-google-map-in-html 
           -->
-          <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2384.313648928471!2d-6.1829769230147384!3d53.30182887805318!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x486708c6bc793777%3A0x6a1415b62797c8b1!2sBlackrock%20Village%20Centre!5e0!3m2!1slv!2sie!4v1718635729926!5m2!1slv!2sie"
-            allowfullscreen=""
-            loading="lazy"
-          ></iframe>
-        </section>
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2384.313648928471!2d-6.1829769230147384!3d53.30182887805318!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x486708c6bc793777%3A0x6a1415b62797c8b1!2sBlackrock%20Village%20Centre!5e0!3m2!1slv!2sie!4v1718635729926!5m2!1slv!2sie"
+              allowfullscreen=""
+              loading="lazy"
+            ></iframe>
+          </section>
 
-        <section class="message">
-          <h2>Get In Touch!</h2>
-          <p>
-            Do you have any questions, suggestions or concernes? <br />
-            We would like to hear from you! <br />
-            Leave a message below and we will soon get in touch with you!
-          </p>
-          <form id="leave-a-message" action="#">
-            <div class="get-email">
-              <label for="email">Email: </label>
-              <input
-                id="email"
-                name="email"
-                type="email"
-                placeholder="harry.potter@hogwarts.com"
+          <section class="message">
+            <h2>Get In Touch!</h2>
+            <p>
+              Do you have any questions, suggestions or concernes? <br />
+              We would like to hear from you! <br />
+              Leave a message below and we will soon get in touch with you!
+            </p>
+            <form id="leave-a-message" action="#">
+              <div class="get-info">
+                <label for="name">Name: </label>
+                <input
+                  id="name"
+                  name="name"
+                  type="text"
+                  placeholder="Harry Potter"
+                  required
+                />
+                <label for="email">Email: </label>
+                <input
+                  id="email"
+                  name="email"
+                  type="email"
+                  placeholder="harry.potter@hogwarts.com"
+                  required
+                />
+              </div>
+              <label for="text-area"
+                >Place for questions, suggestions, concernes and comments</label
+              >
+              <textarea
+                id="text-area"
+                placeholder="I just wanted you to know that you are doing a great job and this place is truly magical!"
                 required
-              />
-            </div>
-            <label for="text-area"
-              >Place for questions, suggestions, concernes and comments</label
-            >
-            <textarea
-              id="text-area"
-              placeholder="I just wanted you to know that you are doing a great job and this place is truly magical!"
-              required
-            ></textarea>
-            <input type="submit" value="Submit" />
-          </form>
-        </section>
-      </div>
-    </main>
-    <footer>
-      <p>Pythagorean Caffee @ 2024</p>
-    </footer>
+              ></textarea>
+              <input class="click-button" type="submit" value="Submit" />
+            </form>
+          </section>
+        </div>
+      </main>
+
+      <footer>
+        <p>Pythagorean Caffee @ 2024</p>
+      </footer>
+    </div>
+    <div id="pop-up" class="pop-up">
+      <h2>Thank you for leaving a message!</h2>
+      <p>Someone from our team will reach out to you soon!</p>
+      <p id="form-data"></p>
+      <button id="pop-up-close" class="click-button">Close</button>
+    </div>
   </body>
 </html>
