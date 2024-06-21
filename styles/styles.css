@@ -292,6 +292,70 @@ textarea {
 
 /* 
   -------------------------------------------------------------------------------------------------------------------------------
+  products.html formatting
+  --------------------------------------------------------------------------------------------------------------------------------
+*/
+#products-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.card {
+  width: 30%;
+  margin: 1rem 1rem;
+  border: solid 2px navy;
+  border-radius: 1rem;
+}
+
+.card img {
+  width: 90%;
+  margin: 1rem auto;
+  border-radius: 1rem;
+}
+
+.card .description-area {
+  min-height: 200px;
+}
+
+.card h2,
+p {
+  text-align: left;
+  margin-left: 1rem;
+}
+
+.card .price {
+  margin-right: 1rem;
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+
+.purchase-area {
+  margin-bottom: 1rem;
+  margin-right: 1rem;
+  display: flex;
+  justify-content: right;
+}
+
+.purchase-area input {
+  width: 3rem;
+}
+
+.purchase-area button {
+  padding: 0 1rem;
+  margin-right: 0.5rem;
+  font-weight: 900;
+  color: white;
+  background-color: navy;
+}
+
+.purchase-area button:hover {
+  color: black;
+  background-color: orange;
+}
+
+/* 
+  -------------------------------------------------------------------------------------------------------------------------------
   formatting of pop up window
   --------------------------------------------------------------------------------------------------------------------------------
 */
