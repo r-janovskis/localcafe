@@ -359,8 +359,8 @@ p {
   border-radius: 0.5rem;
 }
 
-#add:hover,
-#subtract:hover {
+.add:hover,
+.subtract:hover {
   color: black;
   background-color: orange;
 }
