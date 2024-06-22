@@ -1,20 +1,3 @@
-let formValues = {};
-/*
-// Gather data from the form
-function gatherFormData() {
-  formValues.Name = document.getElementById("name").value;
-  formValues.Email = document.getElementById("email").value;
-  formValues.Message = document.getElementById("text-area").value;
-
-  let output = "Information we received:<br>";
-
-  for (key in formValues) {
-    output += `${key} -> ${formValues[key]}<br>`;
-  }
-
-  return output;
-}
-*/
 // Function that clears all values from the fields
 function clearData() {
   document.getElementById("name").value = "";

@@ -19,6 +19,10 @@ p {
   line-height: 1.8;
 }
 
+body {
+  margin: 0;
+}
+
 /* 
   -------------------------------------------------------------------------------------------------------------------------------
   Page lever formatting - position of header, main and footer placed in web page
@@ -277,17 +281,20 @@ textarea {
 
 .click-button {
   display: block;
-  margin: 1rem auto;
+  float: right;
+  margin: 1rem;
   padding: 0.5rem;
-  width: 80%;
+  width: 20%;
   font-weight: 700;
   font-size: 1.2rem;
   border-radius: 1rem;
+  color: white;
+  background-color: navy;
 }
 
 .click-button:hover {
-  color: white;
-  background-color: navy;
+  color: black;
+  background-color: orange;
 }
 
 /* 
@@ -339,19 +346,29 @@ p {
 
 .purchase-area input {
   width: 3rem;
+  text-align: right;
 }
 
-.purchase-area button {
+.add,
+.subtract {
   padding: 0 1rem;
   margin-right: 0.5rem;
   font-weight: 900;
   color: white;
   background-color: navy;
+  border-radius: 0.5rem;
 }
 
-.purchase-area button:hover {
+#add:hover,
+#subtract:hover {
   color: black;
   background-color: orange;
+}
+
+#purchase-button {
+  width: 15%;
+  float: right;
+  margin-right: 1rem;
 }
 
 /* 
@@ -360,12 +377,12 @@ p {
   --------------------------------------------------------------------------------------------------------------------------------
 */
 
-.pop-up {
+#pop-up {
   display: none;
   position: fixed;
   top: 25%;
-  left: 25%;
-  width: 50%;
+  left: 30%;
+  width: 40%;
   background-color: white;
   border: solid 3px navy;
   border-radius: 2rem;
@@ -373,7 +390,7 @@ p {
   opacity: 2;
 }
 
-.pop-up h2,
-.pop-up p {
+#pop-up h2,
+#pop-up p {
   text-align: center;
 }

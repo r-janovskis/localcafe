@@ -30,7 +30,7 @@
     <script src="https://cdn.jsdelivr.net/npm/handlebars@latest/dist/handlebars.js"></script>
     <!-- Create a handlebars template that we will want to use later -->
     <script id="entry-template" type="text/x-handlebars-template">
-      {{#each person}}
+      {{#each items}}
         <div class="card">
           <img src={{this.image}} alt={{alt}} />
           <div class="description-area">
@@ -39,16 +39,17 @@
           </div>
           <p class="price">&euro; {{this.price}}</p>
           <div class="purchase-area">
-            <button class="subtract">-</button>
-            <button class="add">+</button>
-            <input type="text" />
+            <button class="subtract {{this.id}}">-</button>
+            <button class="add {{this.id}}">+</button>
+            <p>Buy:
+              <span class="{{this.id}} item-input">{{this.quantity}}</span></p>
           </div>
         </div>
       {{/each}}
     </script>
     <title>Pythagorean Cafe - Shop</title>
   </head>
-  <body>
+  <body id="body">
     <div class="body-container">
       <header>
         <div class="header_logo">
@@ -75,14 +76,14 @@
           Scroll down and take a look! <br />
           Happy shopping!
         </p>
-        <p></p>
         <!-- Adding bootstrap carousel-->
         <section id="products-content"></section>
-        <button class="make-purchase">To Checkout</button>
+        <button id="purchase-button" class="click-button">To Checkout</button>
       </main>
       <footer>
         <p>Pythagorean Caffee @ 2024</p>
       </footer>
     </div>
+    <div id="pop-up"></div>
   </body>
 </html>
