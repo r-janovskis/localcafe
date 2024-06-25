@@ -131,11 +131,30 @@ header a:hover {
     justify-content: center;
     align-items: center;
   }
+
+  .header_logo {
+    margin: 0;
+  }
+
+  header ul {
+    width: 100%;
+    margin: 0;
+  }
+
+  h2 {
+    margin: 0 1rem;
+  }
 }
 
 @media only screen and (max-width: 600px) {
+  header ul {
+    list-style-type: none;
+    margin: 0;
+    width: 98%;
+  }
+
   header a {
-    font-size: 1.2rem;
+    font-size: 1rem;
     margin: 0 0.25rem;
   }
 }
@@ -343,7 +362,7 @@ textarea {
 @media only screen and (max-width: 850px) {
   .contact-container {
     flex-direction: column;
-    margin: 1rem;
+    margin: auto;
   }
 
   .contact-container section {
@@ -351,8 +370,21 @@ textarea {
     overflow: hidden;
     border: solid 3px navy;
     border-radius: 3rem;
-    padding-bottom: 2rem;
     margin: 1rem auto;
+  }
+
+  .get-info {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .get-info label {
+    display: block;
+    width: 20%;
+  }
+
+  .get-info input {
+    width: 95%;
   }
 }
 
