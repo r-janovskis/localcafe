@@ -111,7 +111,7 @@ function generateCheckOutForm() {
 
   payment += '<form id="payment-info" action="#">';
   payment +=
-    '<label for="name">Cardholder Name: </label><input id="name" name="name" type="text" required />';
+    '<label for="name">Cardholder Name: </label> <input id="name" name="name" type="text" required />';
   payment +=
     '<label for="email">Email: </label> <input id="email" name="email" type="email" required />';
   payment +=

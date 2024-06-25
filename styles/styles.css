@@ -112,17 +112,17 @@ header a {
 }
 
 header a:hover {
-  color: orange;
+  color: darkorange;
 }
 
 .current {
-  color: orange;
+  color: darkorange;
   font-weight: 700;
   text-decoration: underline;
 }
 
 .current:hover {
-  color: orange;
+  color: darkorange;
 }
 
 @media only screen and (max-width: 850px) {
@@ -337,7 +337,7 @@ textarea {
 
 .click-button:hover {
   color: black;
-  background-color: orange;
+  background-color: darkorange;
 }
 
 @media only screen and (max-width: 850px) {
@@ -430,7 +430,7 @@ p {
 .add:hover,
 .subtract:hover {
   color: black;
-  background-color: orange;
+  background-color: darkorange;
 }
 
 #purchase-button {
@@ -472,10 +472,10 @@ p {
 #pop-up {
   display: none;
   position: fixed;
-  top: 20%;
-  left: 30%;
-  width: 40%;
-  max-height: 50%;
+  top: 10%;
+  left: 25%;
+  width: 50%;
+  max-height: 80%;
   overflow: scroll;
   background-color: white;
   border: solid 3px navy;
@@ -498,7 +498,7 @@ p {
   margin: auto;
 }
 #payment-info label {
-  width: 30%;
+  width: 40%;
 }
 #payment-info input {
   width: 50%;
@@ -516,7 +516,7 @@ p {
   background-color: rgba(94, 80, 80, 0.438);
 }
 
-@media only screen and (max-width: 960px) {
+@media only screen and (max-width: 1000px) {
   #pop-up {
     top: 15%;
     left: 10%;
@@ -532,6 +532,13 @@ p {
   #payment-info {
     width: 95%;
   }
+
+  #payment-info label {
+    width: 40%;
+  }
+  #payment-info input {
+    width: 50%;
+  }
 }
 
 @media only screen and (max-width: 650px) {
@@ -541,12 +548,5 @@ p {
     width: 95%;
     max-height: 95%;
     border-radius: 2rem;
-  }
-  #pop-up table {
-    width: 95%;
-  }
-
-  #payment-info {
-    width: 95%;
   }
 }
