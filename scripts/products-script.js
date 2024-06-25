@@ -11,7 +11,7 @@ const data = {
       title: "Smart Book",
       description:
         "We are enthusiastic about learning, and what's a better way of doing it than reading? Perferc for anyone who's a keen reader!",
-      image: "../images/book.jpg",
+      image: "./../images/book.jpg",
       price: 11.95,
       quantity: 0,
     },
