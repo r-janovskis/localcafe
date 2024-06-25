@@ -88,6 +88,52 @@ function clearData() {
   }
 }
 
+// Function that creates a checkout form
+function generateCheckOutForm() {
+  let content = "<h2>Order</h2>";
+
+  let total = 0;
+  let order =
+    '<table class="table table-hover"> <tr><th>Item</th><th class="price">Quantity</th><th class="price">Unit Price</th></tr>';
+
+  data.items.forEach((item) => {
+    if (item.quantity != 0) {
+      order += `<tr><td>${item.title}</td><td class="price">${item.quantity}</td><td class="price">${item.price}</td></tr>`;
+      total += item.quantity * item.price;
+    }
+  });
+
+  order += `<tr><td></td><td></td><th class="price">Total: &euro; ${total.toFixed(
+    2
+  )}</th></tr></table>`;
+
+  let payment = " <h2>Payment Details</h2>";
+
+  payment += '<form id="payment-info" action="#">';
+  payment +=
+    '<label for="name">Cardholder Name: </label><input id="name" name="name" type="text" required />';
+  payment +=
+    '<label for="email">Email: </label> <input id="email" name="email" type="email" required />';
+  payment +=
+    '<label for="address">Billing Address: </label> <input id="address" name="address" type="text" required />';
+  payment +=
+    '<label for="number">Card Number: </label> <input id="number" name="number" type="text" required />';
+  payment +=
+    '<label for="date">Expire Date: </label> <input id="date" name="date" type="text" placeholder="MM/YY" required />';
+  payment +=
+    '<label for="sec">Security Digits: </label> <input id="sec" name="sec" type="text" placeholder="XXX" required />';
+  payment += "</form>";
+
+  const buttons =
+    '<button id="pop-up-submit" class="click-button">Submit</button><button id="pop-up-close" class="click-button">Close</button>';
+
+  content += order;
+  content += payment;
+  content += buttons;
+
+  return content;
+}
+
 // Function that handles click on 'To Checkout'
 function handlePurchase() {
   document.getElementById("shade").style.display = "block";
@@ -97,16 +143,17 @@ function handlePurchase() {
 
   // Check wether user has selected some items to purchase
   if (data.items.some((item) => item.quantity != 0)) {
-    popUp.innerHTML = "<h2>Hello there!</h2>";
-
-    popUp.innerHTML +=
-      '<button id="pop-up-close" class="click-button">Close</button>';
+    popUp.innerHTML = generateCheckOutForm();
 
     popUp.style.display = "block";
 
     document
       .getElementById("pop-up-close")
-      .addEventListener("click", handleClick);
+      .addEventListener("click", handleReturn);
+
+    document
+      .getElementById("pop-up-submit")
+      .addEventListener("click", handleSubmit);
 
     // No items selected
   } else {
@@ -132,6 +179,29 @@ function handleClick() {
 
   clearData();
   document.getElementById("shade").style.display = "none";
+}
+
+function handleReturn() {
+  //document.getElementById("form-data").innerHTML = "";
+  document.getElementById("pop-up").style.display = "none";
+  document.getElementById("pop-up").innerHTML = "";
+
+  document.getElementById("shade").style.display = "none";
+}
+
+function handleSubmit() {
+  const popUp = document.getElementById("pop-up");
+
+  popUp.innerHTML = "<h2>Thank you for Shopping at Pythagorean Cafe!</h2>";
+  popUp.innerHTML +=
+    "<p>Your order will be on its way after we have processed the order!</p>";
+
+  popUp.innerHTML +=
+    '<button id="pop-up-close" class="click-button">Close</button>';
+
+  document
+    .getElementById("pop-up-close")
+    .addEventListener("click", handleClick);
 }
 
 function handleAdd(e) {

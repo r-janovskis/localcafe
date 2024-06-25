@@ -376,9 +376,11 @@ p {
 #pop-up {
   display: none;
   position: fixed;
-  top: 25%;
+  top: 20%;
   left: 30%;
   width: 40%;
+  max-height: 50%;
+  overflow: scroll;
   background-color: white;
   border: solid 3px navy;
   border-radius: 2rem;
@@ -388,6 +390,22 @@ p {
 #pop-up h2,
 #pop-up p {
   text-align: center;
+}
+
+#pop-up table {
+  width: 80%;
+  margin: auto;
+}
+
+#payment-info {
+  width: 80%;
+  margin: auto;
+}
+#payment-info label {
+  width: 30%;
+}
+#payment-info input {
+  width: 50%;
 }
 
 #shade {
