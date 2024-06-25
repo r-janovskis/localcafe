@@ -90,7 +90,7 @@ function clearData() {
 
 // Function that handles click on 'To Checkout'
 function handlePurchase() {
-  document.getElementById("body").classList.add("shade");
+  document.getElementById("shade").style.display = "block";
 
   const popUp = document.getElementById("pop-up");
   //const items = document.getElementsByClassName("item-input");
@@ -131,7 +131,7 @@ function handleClick() {
   document.getElementById("pop-up").innerHTML = "";
 
   clearData();
-  document.getElementById("body").classList.remove("shade");
+  document.getElementById("shade").style.display = "none";
 }
 
 function handleAdd(e) {

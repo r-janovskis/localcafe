@@ -10,7 +10,7 @@ function handleSubmit(e) {
   e.preventDefault();
   //const output = gatherFormData();
 
-  document.getElementById("body").classList.add("shade");
+  document.getElementById("shade").style.display = "block";
   //alert(output);
 
   //document.getElementById("form-data").innerHTML = output;
@@ -22,7 +22,7 @@ function handleClick() {
   document.getElementById("pop-up").style.display = "none";
 
   clearData();
-  document.getElementById("body").classList.remove("shade");
+  document.getElementById("shade").style.display = "none";
 }
 
 const form = document.getElementById("leave-a-message");

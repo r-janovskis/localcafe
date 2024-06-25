@@ -62,10 +62,6 @@ footer {
   margin-top: 2rem;
 }
 
-.shade {
-  background-color: rgba(94, 80, 80, 0.438);
-}
-
 /* 
   -------------------------------------------------------------------------------------------------------------------------------
   Header formatting - styling elements in header part of the page
@@ -116,17 +112,17 @@ header a {
 }
 
 header a:hover {
-  color: blue;
+  color: orange;
 }
 
 .current {
-  color: navy;
+  color: orange;
   font-weight: 700;
   text-decoration: underline;
 }
 
 .current:hover {
-  color: navy;
+  color: orange;
 }
 
 /* 
@@ -386,11 +382,22 @@ p {
   background-color: white;
   border: solid 3px navy;
   border-radius: 2rem;
-  z-index: 10;
-  opacity: 2;
+  z-index: 2;
 }
 
 #pop-up h2,
 #pop-up p {
   text-align: center;
+}
+
+#shade {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+
+  z-index: 1;
+  background-color: rgba(94, 80, 80, 0.438);
 }
