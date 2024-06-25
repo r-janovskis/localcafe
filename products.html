@@ -32,7 +32,7 @@
     <script id="entry-template" type="text/x-handlebars-template">
       {{#each items}}
         <div class="card">
-          <img src={{this.image}} alt={{alt}} />
+          <img src={{this.image}} alt="Product - {{this.title}}" />
           <div class="description-area">
             <h2>{{this.title}}</h2>
             <p>{{this.description}}</p>
