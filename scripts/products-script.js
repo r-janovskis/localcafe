@@ -125,7 +125,7 @@ function generateCheckOutForm() {
   payment += "</form>";
 
   const buttons =
-    '<button id="pop-up-submit" class="click-button">Submit</button><button id="pop-up-close" class="click-button">Close</button>';
+    '<button id="pop-up-close" class="click-button">Close</button><button id="pop-up-submit" class="click-button">Submit</button>';
 
   content += order;
   content += payment;
