@@ -89,15 +89,10 @@ footer {
 
 header ul {
   list-style-type: none;
-  overflow: hidden;
   padding: 0;
   margin: 0;
   display: flex;
-  margin-right: 1rem;
-}
-
-header ul li {
-  display: inline-block;
+  justify-content: space-around;
 }
 
 header ul > li + li {
@@ -110,6 +105,10 @@ header a {
   font-weight: 600;
   text-decoration: none;
   color: navy;
+}
+
+header ul li {
+  text-align: center;
 }
 
 header a:hover {
