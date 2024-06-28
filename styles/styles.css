@@ -218,7 +218,7 @@ h2 {
 }
 
 .events ul {
-  list-style: none;
+  list-style-type: lower-greek;
   margin-top: 0.5rem;
 }
 
