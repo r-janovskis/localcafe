@@ -94,11 +94,15 @@ function generateCheckOutForm() {
 
   let total = 0;
   let order =
-    '<table class="table table-hover"> <tr><th>Item</th><th class="price">Quantity</th><th class="price">Unit Price</th></tr>';
+    '<table class="table table-hover"> <tr><th>Item</th><th class="price">Quantity</th><th class="price">Price</th></tr>';
 
   data.items.forEach((item) => {
     if (item.quantity != 0) {
-      order += `<tr><td>${item.title}</td><td class="price">${item.quantity}</td><td class="price">${item.price}</td></tr>`;
+      order += `<tr><td>${item.title}</td><td class="price">${
+        item.quantity
+      }</td><td class="price">${(item.price * item.quantity).toFixed(
+        2
+      )}</td></tr>`;
       total += item.quantity * item.price;
     }
   });
